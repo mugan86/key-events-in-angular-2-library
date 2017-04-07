@@ -7,11 +7,6 @@ window.focus(); // make sure we are on this page before we start typing
   templateUrl: './keyboard-events.html'
 })
 export class KeyboardEventsComponent {
-  title = 'app works!';
- 
-
-  constructor(){}
-
   /* a few examples */
   keyboardEvent: any;
   altKey: boolean;
@@ -25,12 +20,12 @@ export class KeyboardEventsComponent {
   timeStamp: number;
   type: string;
   which: number;
-  
+  title = 'app works!';
+  constructor() {}
   @HostListener('window:keydown', ['$event'])
   keyboardInput(event: any) {
     event.preventDefault();
     event.stopPropagation();
-    
     console.log(event.altKey);
     this.keyboardEvent = event;
     this.altKey = event.altKey;
@@ -44,37 +39,11 @@ export class KeyboardEventsComponent {
     this.timeStamp = event.timeStamp;
     this.type = event.type;
     this.which = event.which;
-
-    if (this.code == 'ArrowUp')
-    {
-        alert("Test");
+    if (this.code === 'ArrowUp') {
+        alert('Test');
     }
   }
-
-  getKeyboardEventCode()
-  {
+  getKeyboardEventCode() {
       return this.code;
   }
-/*
-    if (this.code == 'ArrowUp')
-    {
-      this.increment();
-    }
-    else if (this.code == 'ArrowRight')
-    {
-      this.duplicate();
-    }
-    else if (this.code == 'ArrowLeft')
-    {
-      this.half();
-    }
-    else if (this.code == 'ArrowDown')
-    {
-      this.decrement();
-    }
-    else if (this.code == 'KeyC' || this.code == 'F5')
-    {
-      this.reset();
-    }
-  }*/
 }
