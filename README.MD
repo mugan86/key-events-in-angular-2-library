@@ -54,14 +54,21 @@ Once your library is imported, you can use its components, directives and pipes 
 <keyboard-events [key]="''"
         (selectKey)="keyChange($event)"></keyboard-events>
 ```
-And inside of app.component.ts create one function to manage receive key event call 'keyChange()'
-```xml
-<!-- You can now use your library component in app.component.html -->
-<h1>
-  {{title}}
-</h1>
-<keyboard-events [key]="''"
-        (selectKey)="keyChange($event)"></keyboard-events>
+And inside of app.component.ts create one function to manage receive key event call 'keyChange(), import HostListener and add windows.focus();'
+```ts
+import { Component, HostListener } from '@angular/core';
+window.focus(); // make sure we are on this page before we start typing
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'app works!';
+   keyChange(event) {
+    console.log("Receive event" +  event[0] + " / " + event[1]);
+  }
+}
 ```
 
 ## Development
