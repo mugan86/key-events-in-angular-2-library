@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { KeyboardEvents } from './src/keyboard-events.component';
+import { KeyboardEventsComponent } from './src/keyboard-events.component';
 import { SampleDirective } from './src/sample.directive';
 import { SamplePipe } from './src/sample.pipe';
 import { SampleService } from './src/sample.service';
@@ -15,12 +15,12 @@ export * from './src/sample.service';
     CommonModule
   ],
   declarations: [
-    KeyboardEvents,
+    KeyboardEventsComponent,
     SampleDirective,
     SamplePipe
   ],
   exports: [
-    KeyboardEvents,
+    KeyboardEventsComponent,
     SampleDirective,
     SamplePipe
   ]
