@@ -54,7 +54,12 @@ Once your library is imported, you can use its components, directives and pipes 
 <keyboard-events [key]="''"
         (selectKey)="keyChange($event)"></keyboard-events>
 ```
-And inside of app.component.ts create one function to manage receive key event call 'keyChange(), import HostListener and add windows.focus();'
+And inside of app.component.ts create one function to manage receive key event call 'keyChange(), import HostListener and add windows.focus();
+
+Receive data:
+
+* key: Key name, receive 'KeyG' after keydown 'g'
+* KeyCode: Key number, get in string format. Receive '71' after keydown 'g' key.
 ```ts
 import { Component, HostListener } from '@angular/core';
 window.focus(); // make sure we are on this page before we start typing
