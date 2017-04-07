@@ -41,9 +41,6 @@ export class KeyboardEventsComponent {
     this.timeStamp = event.timeStamp;
     this.type = event.type;
     this.which = event.which;
-    if (this.code === 'ArrowUp') {
-        alert('Test');
-    }
     // Add in eventData array before send to return to select main component
     let eventData = [this.code, String(this.keyCode)];
     this.selectKey.emit(eventData);
