@@ -35,6 +35,7 @@ import { SampleModule } from 'key-events-library';
     BrowserModule,
 
     // Specify your library as an import
+    SampleModule,
     LibraryModule
   ],
   providers: [],
@@ -50,7 +51,17 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<sampleComponent></sampleComponent>
+<keyboard-events [key]="''"
+        (selectKey)="keyChange($event)"></keyboard-events>
+```
+And inside of app.component.ts create one function to manage receive key event call 'keyChange()'
+```xml
+<!-- You can now use your library component in app.component.html -->
+<h1>
+  {{title}}
+</h1>
+<keyboard-events [key]="''"
+        (selectKey)="keyChange($event)"></keyboard-events>
 ```
 
 ## Development
