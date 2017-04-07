@@ -1,6 +1,6 @@
 {
   "name": "key-events-library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "build": "ngc -p tsconfig.json",
     "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
@@ -17,7 +17,9 @@
     "email": "mugan86@gmail.com"
   },
   "keywords": [
-    "angular"
+    "angular2",
+    "keyboard",
+    "key-events"
   ],
   "license": "MIT",
   "bugs": {
