@@ -1,7 +1,5 @@
-import { Component, HostListener } from '@angular/core';
-
+import { Component, HostListener, Input, Output, EventEmitter  } from '@angular/core';
 window.focus(); // make sure we are on this page before we start typing
-
 @Component({
   selector: 'keyboard-events',
   templateUrl: './keyboard-events.html'
@@ -21,6 +19,10 @@ export class KeyboardEventsComponent {
   type: string;
   which: number;
   title = 'app works!';
+  @Input()
+  key: string;
+  @Output()
+  selectKey: EventEmitter<String[]> = new EventEmitter<String[]>();
   constructor() {}
   @HostListener('window:keydown', ['$event'])
   keyboardInput(event: any) {
