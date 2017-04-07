@@ -1,55 +1,57 @@
-<p class="card-text"> Start typing to see KeyboardEvent values.</p>
-<table class="table table-sm table-responsive">
-  <thead>
-    <tr class="bg-info">
-      <th>KEY</th>
-      <th>RESULT</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Alt Key</td>
-      <td>{{altKey}}</td>
-    </tr>
+<div *ngIf="showLog">
+  <p class="card-text"> Start typing to see KeyboardEvent values.</p>
+  <table class="table table-sm table-responsive">
+    <thead>
+      <tr class="bg-info">
+        <th>KEY</th>
+        <th>RESULT</th>
+      </tr>
+    </thead>
+    <tbody>
       <tr>
-      <td>Char Code</td>
-      <td>{{charCode}}</td>
-    </tr>
+        <td>Alt Key</td>
+        <td>{{altKey}}</td>
+      </tr>
+        <tr>
+        <td>Char Code</td>
+        <td>{{charCode}}</td>
+      </tr>
+        <tr>
+        <td>Code</td>
+        <td>{{code}}</td>
+      </tr>
+        <tr>
+        <td>Ctrl Key</td>
+        <td>{{ctrlKey}}</td>
+      </tr>
+        <tr>
+        <td>Key Code</td>
+        <td>{{keyCode}}</td>
+      </tr>
+        <tr>
+        <td>Key Identifier</td>
+        <td>{{keyIdentifier}}</td>
+      </tr>
       <tr>
-      <td>Code</td>
-      <td>{{code}}</td>
-    </tr>
+        <td>Meta Key</td>
+        <td>{{metaKey}}</td>
+      </tr>
       <tr>
-      <td>Ctrl Key</td>
-      <td>{{ctrlKey}}</td>
-    </tr>
+        <td>Shift Key</td>
+        <td>{{shiftKey}}</td>
+      </tr>
       <tr>
-      <td>Key Code</td>
-      <td>{{keyCode}}</td>
-    </tr>
+        <td>TimeStamp</td>
+        <td>{{timeStamp}}</td>
+      </tr>
       <tr>
-      <td>Key Identifier</td>
-      <td>{{keyIdentifier}}</td>
-    </tr>
-    <tr>
-      <td>Meta Key</td>
-      <td>{{metaKey}}</td>
-    </tr>
-    <tr>
-      <td>Shift Key</td>
-      <td>{{shiftKey}}</td>
-    </tr>
-    <tr>
-      <td>TimeStamp</td>
-      <td>{{timeStamp}}</td>
-    </tr>
-    <tr>
-      <td>Type</td>
-      <td>{{type}}</td>
-    </tr>
-    <tr>
-      <td>Which</td>
-      <td>{{which}}</td>
-    </tr>
-  </tbody>
-</table>  
+        <td>Type</td>
+        <td>{{type}}</td>
+      </tr>
+      <tr>
+        <td>Which</td>
+        <td>{{which}}</td>
+      </tr>
+    </tbody>
+  </table>  
+</div>
