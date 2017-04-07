@@ -20,12 +20,12 @@ and then from your Angular `AppModule`:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'key-events-library';
+import { KeyboardsEventsModule } from 'key-events-library';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { SampleModule } from 'key-events-library';
     BrowserModule,
 
     // Specify your library as an import
-    SampleModule,
+    KeyboardsEventsModule,
     LibraryModule
   ],
   providers: [],
