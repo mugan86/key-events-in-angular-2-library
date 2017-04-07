@@ -20,6 +20,8 @@ export class KeyboardEventsComponent {
   which: number;
   title = 'app works!';
   @Input()
+  showLog: Boolean = true;
+  @Input()
   key: string;
   @Output()
   selectKey: EventEmitter<String[]> = new EventEmitter<String[]>();
