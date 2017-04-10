@@ -56,6 +56,12 @@ Once your library is imported, you can use its components, directives and pipes 
 <keyboard-events [key]="''" [showLog] = "'yes'"
         (selectKey)="keyChange($event)"></keyboard-events>
 ```
+
+##Input data to correct use:
+
+* [key] (required): Initialize with '' value.
+* [showLog] (optional): 'yes' to show key events charcode and more data. If value different NOT show nothing. If not add this value, for default always SHOW log.
+
 And inside of app.component.ts create one function to manage receive key event call 'keyChange(), import HostListener and add windows.focus();
 
 Receive data:
