@@ -37,8 +37,7 @@ import { KeyboardsEventsModule } from 'key-events-library';
     BrowserModule,
 
     // Specify your library as an import
-    KeyboardsEventsModule,
-    LibraryModule
+    KeyboardsEventsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
