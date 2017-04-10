@@ -1,4 +1,4 @@
-# Heyboard Events Library in Angular 2x/4x
+# Keyboard Events Library in Angular 2x/4x
 
 Library to capture key-events. Compatible with **Angular 2.x and 4.x** ;)
 
