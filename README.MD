@@ -1,5 +1,7 @@
 # key-events-library
 
+Library to capture key-events. Compatible with **Angular 2.x and 4.x** ;)
+
 ## Installation
 
 To install this library, run:
@@ -39,7 +41,8 @@ import { KeyboardsEventsModule } from 'key-events-library';
     LibraryModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
 ```
