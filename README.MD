@@ -1,4 +1,4 @@
-# key-events-library
+# Heyboard Events Library in Angular 2x/4x
 
 Library to capture key-events. Compatible with **Angular 2.x and 4.x** ;)
 
@@ -26,7 +26,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
+// Import our library
 import { KeyboardsEventsModule } from 'key-events-library';
 
 @NgModule({
@@ -36,7 +36,7 @@ import { KeyboardsEventsModule } from 'key-events-library';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
+    // Specify my library as an import
     KeyboardsEventsModule
   ],
   providers: [],
@@ -53,7 +53,7 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<keyboard-events [key]="''"
+<keyboard-events [key]="''" [showLog] = "'yes'"
         (selectKey)="keyChange($event)"></keyboard-events>
 ```
 And inside of app.component.ts create one function to manage receive key event call 'keyChange(), import HostListener and add windows.focus();
