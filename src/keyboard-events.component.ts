@@ -20,7 +20,7 @@ export class KeyboardEventsComponent {
   which: number;
   title = 'app works!';
   @Input()
-  showLog: Boolean = true;
+  showLog: string = 'yes';
   @Input()
   key: string;
   @Output()
