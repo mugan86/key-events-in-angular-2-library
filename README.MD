@@ -20,6 +20,11 @@ $ npm install ng-2-4keyboard-events --save
 
 https://www.npmjs.com/package/ng-2-4keyboard-events
 
+## Examples to use this library
+
+* In Angular 2 (Formula 1 example): https://github.com/mugan86/f1-angular2
+* In Angular 4 (Playground example): https://github.com/mugan86/angular-4-playground
+
 and then from your Angular `AppModule`:
 
 ```typescript
