@@ -16,6 +16,10 @@ To install this library with npm repository reference, run:
 $ npm install ng-2-4keyboard-events --save
 ```
 
+## More info about package in NPM:
+
+https://www.npmjs.com/package/ng-2-4keyboard-events
+
 and then from your Angular `AppModule`:
 
 ```typescript
