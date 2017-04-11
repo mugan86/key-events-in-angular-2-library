@@ -7,15 +7,7 @@ Library to capture key-events. Compatible with **Angular 2.x and 4.x** ;)
 To install this library, run:
 
 ```bash
-$ npm install angular-2x-4x-keyboard-events-library --save
-```
-
-## Consuming your library
-
-Once you have published your library to npm, you can import your library in any Angular application by running:
-
-```bash
-$ npm install angular-2x-4x-keyboard-events-library
+$ npm install https://github.com/mugan86/key-events-in-angular-2-library.git#v0.3.0 --save
 ```
 
 and then from your Angular `AppModule`:
