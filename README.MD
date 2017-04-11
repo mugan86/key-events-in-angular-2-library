@@ -27,7 +27,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import our library
-import { KeyboardsEventsModule } from 'key-events-library';
+import { KeyboardsEventsModule } from 'angular-2x-4x-keyboard-events-library';
 
 @NgModule({
   declarations: [
