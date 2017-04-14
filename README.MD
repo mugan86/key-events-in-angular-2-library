@@ -7,7 +7,7 @@ Library to capture key-events. Compatible with **Angular 2.x and 4.x** ;)
 To install this library with github reference, run:
 
 ```bash
-$ npm install https://github.com/mugan86/key-events-in-angular-2-library.git#v0.4.2 --save
+$ npm install https://github.com/mugan86/key-events-in-angular-2-library.git#v0.4.0 --save
 ```
 
 To install this library with npm repository reference, run:
