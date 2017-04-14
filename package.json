@@ -1,33 +1,27 @@
 {
-  "name": "key-events-library",
-  "version": "0.1.2",
+  "name": "ng-2-4keyboard-events",
+  "version": "0.4.2",
   "scripts": {
-    "build": "ngc -p tsconfig.json",
+    "build": "./build.sh",
     "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
-    "test": "tsc && karma start",
-    "prepublish": "tsc",
-    "tsc": "tsc"
+    "test": "tsc && karma start"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/mugan86/key-events-in-angular-2-library"
   },
   "author": {
-    "name": "Anartz Mugika",
+    "name": "Anartz Mugika Ledo",
     "email": "mugan86@gmail.com"
   },
   "keywords": [
-    "angular2",
-    "keyboard",
-    "key-events"
+    "angular"
   ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mugan86/key-events-in-angular-2-library/issues"
   },
-  "main": "./dist/index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@angular/common": "^2.0.0 || >=4.0.0 <5.0.0",
     "@angular/compiler": "^2.0.0 || >=4.0.0 <5.0.0",
@@ -56,5 +50,7 @@
   },
   "engines": {
     "node": ">=6.0.0"
-  }
+  },
+  "description": "Library to capture key-events. Compatible with Angular 2.x and 4.x ;)",
+  "homepage": "https://github.com/mugan86/key-events-in-angular-2-library#readme"
 }

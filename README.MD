@@ -1,20 +1,29 @@
-# key-events-library
+# Keyboard Events Library in Angular 2x/4x
+
+Library to capture key-events. Compatible with **Angular 2.x and 4.x** ;)
 
 ## Installation
 
-To install this library, run:
+To install this library with github reference, run:
 
 ```bash
-$ npm install key-events-library --save
+$ npm install https://github.com/mugan86/key-events-in-angular-2-library.git#v0.4.2 --save
 ```
 
-## Consuming your library
-
-Once you have published your library to npm, you can import your library in any Angular application by running:
+To install this library with npm repository reference, run:
 
 ```bash
-$ npm install key-events-library
+$ npm install ng-2-4keyboard-events --save
 ```
+
+## More info about package in NPM:
+
+https://www.npmjs.com/package/ng-2-4keyboard-events
+
+## Examples to use this library
+
+* In Angular 2 (Formula 1 example): https://github.com/mugan86/f1-angular2
+* In Angular 4 (Playground example): https://github.com/mugan86/angular-4-playground
 
 and then from your Angular `AppModule`:
 
@@ -24,8 +33,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
-import { KeyboardsEventsModule } from 'key-events-library';
+// Import our library
+import { KeyboardsEventsModule } from 'ng-2-4keyboard-events';
 
 @NgModule({
   declarations: [
@@ -34,12 +43,12 @@ import { KeyboardsEventsModule } from 'key-events-library';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
-    KeyboardsEventsModule,
-    LibraryModule
+    // Specify my library as an import
+    KeyboardsEventsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
 ```
@@ -51,9 +60,15 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<keyboard-events [key]="''"
+<keyboard-events [key]="''" [showLog] = "'yes'"
         (selectKey)="keyChange($event)"></keyboard-events>
 ```
+
+## Input data to correct use:
+
+* **[key]** (required): Initialize with '' value.
+* **[showLog]** (optional): 'yes' to show key events charcode and more data. If value different NOT show nothing. If not add this value, for default always SHOW log.
+
 And inside of app.component.ts create one function to manage receive key event call 'keyChange(), import HostListener and add windows.focus();
 
 Receive data:
