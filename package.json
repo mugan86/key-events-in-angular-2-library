@@ -1,10 +1,6 @@
 {
   "name": "ng-2-4keyboard-events",
-<<<<<<< HEAD
   "version": "0.4.2",
-=======
-  "version": "0.4.1",
->>>>>>> eced9a11aa2078dba62e09de539df7ce874c1829
   "scripts": {
     "build": "./build.sh",
     "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
@@ -12,17 +8,12 @@
   },
   "repository": {
     "type": "git",
-<<<<<<< HEAD
     "url": "https://github.com/mugan86/key-events-in-angular-2-library"
   },
   "author": {
     "name": "Anartz Mugika Ledo",
     "email": "mugan86@gmail.com"
-=======
-    "url": "git+https://github.com/mugan86/key-events-in-angular-2-library.git"
->>>>>>> eced9a11aa2078dba62e09de539df7ce874c1829
   },
-  "author": "Anartz Mugika <mugan86@gmail.com>",
   "keywords": [
     "angular"
   ],
@@ -30,10 +21,6 @@
   "bugs": {
     "url": "https://github.com/mugan86/key-events-in-angular-2-library/issues"
   },
-<<<<<<< HEAD
-=======
-  "main": "./dist/index.js",
->>>>>>> eced9a11aa2078dba62e09de539df7ce874c1829
   "dependencies": {},
   "devDependencies": {
     "@angular/common": "^2.0.0 || >=4.0.0 <5.0.0",
