@@ -1,8 +1,8 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { KeyboardEventsComponent } from './keyboard-events.component';
+import { KeyboardEventsComponent } from './src/keyboard-events.component';
 
-export * from './keyboard-events.component';
+export * from './src/keyboard-events.component';
 
 @NgModule({
   imports: [

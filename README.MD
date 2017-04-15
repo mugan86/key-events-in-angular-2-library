@@ -4,26 +4,11 @@ Library to capture key-events. Compatible with **Angular 2.x and 4.x** ;)
 
 ## Installation
 
-To install this library with github reference, run:
+To install this library, run:
 
 ```bash
-$ npm install https://github.com/mugan86/key-events-in-angular-2-library.git#v0.4.0 --save
+$ npm install https://github.com/mugan86/key-events-in-angular-2-library.git#v0.3.0 --save
 ```
-
-To install this library with npm repository reference, run:
-
-```bash
-$ npm install ng-2-4keyboard-events --save
-```
-
-## More info about package in NPM:
-
-https://www.npmjs.com/package/ng-2-4keyboard-events
-
-## Examples to use this library
-
-* In Angular 2 (Formula 1 example): https://github.com/mugan86/f1-angular2
-* In Angular 4 (Playground example): https://github.com/mugan86/angular-4-playground
 
 and then from your Angular `AppModule`:
 
@@ -34,7 +19,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import our library
-import { KeyboardsEventsModule } from 'ng-2-4keyboard-events';
+import { KeyboardsEventsModule } from 'angular-2x-4x-keyboard-events-library';
 
 @NgModule({
   declarations: [
