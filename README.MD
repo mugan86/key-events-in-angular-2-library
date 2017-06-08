@@ -2,6 +2,10 @@
 
 Library to capture key-events. Compatible with **Angular 2.x and 4.x** ;)
 
+## Test this library in Angular 4 page!
+
+https://mugan86.github.io/key-events-in-angular-2-library/
+
 ## Installation
 
 To install this library, run:
