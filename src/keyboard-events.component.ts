@@ -20,7 +20,7 @@ export class KeyboardEventsComponent {
   which: number;
   title = 'app works!';
   @Input()
-  showLog: string = 'yes';
+  showLog = 'yes';
   @Input()
   key: string;
   @Output()
@@ -30,7 +30,6 @@ export class KeyboardEventsComponent {
   keyboardInput(event: any) {
     event.preventDefault();
     event.stopPropagation();
-    console.log(event.altKey);
     this.keyboardEvent = event;
     this.altKey = event.altKey;
     this.charCode = event.charCode;
